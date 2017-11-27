@@ -1,0 +1,11 @@
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\bin\Debug\netcoreapp2.0\Assignment_1.deps.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\bin\Debug\netcoreapp2.0\Assignment_1.runtimeconfig.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\bin\Debug\netcoreapp2.0\Assignment_1.runtimeconfig.dev.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\bin\Debug\netcoreapp2.0\Assignment_1.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\bin\Debug\netcoreapp2.0\Assignment_1.pdb
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\obj\Debug\netcoreapp2.0\Assignment_1.csprojResolveAssemblyReference.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\obj\Debug\netcoreapp2.0\Assignment_1.csproj.CoreCompileInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\obj\Debug\netcoreapp2.0\Assignment_1.AssemblyInfoInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\obj\Debug\netcoreapp2.0\Assignment_1.AssemblyInfo.cs
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\obj\Debug\netcoreapp2.0\Assignment_1.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\Assignment_1\Assignment_1\obj\Debug\netcoreapp2.0\Assignment_1.pdb
