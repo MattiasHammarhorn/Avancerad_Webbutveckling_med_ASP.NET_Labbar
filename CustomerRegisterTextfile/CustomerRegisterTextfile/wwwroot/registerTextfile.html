@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>CustomerRegisterTextfile</h2>
+
+    <h1>Get a customer</h1>
+    <form method="get" action="api/values/GetCustomer">
+        Id: <input name="Id" />
+        <button type="submit">Hämta</button>
+    </form>
+
+    <br />
+    <hr />
+    <h2>Get a brief view of a customer</h2>
+    <form method="get" action="api/values/GetCustomerBriefly">
+        Id: <input name="Id" />
+        <br />
+        <input type="checkbox" name="briefMode" value="true" /> Brief
+        <br />
+        <button type="submit">Hämta</button>
+    </form>
+
+    <br />
+    <hr />
+    <h2>Get all customers</h2>
+    <form method="get" action="api/values/GetAllCustomers">
+        <button type="submit">Hämta alla kunder</button>
+    </form>
+
+    <br />
+    <hr />
+    <h2>Get a customer with AJAX</h2>
+    Id: <input id="idForAjax" name="Id" />
+    <button id="getSingleCustomer">Hämta</button>
+
+    <br />
+    <hr />
+    <h2>Get a brief view of a customer with AJAX</h2>
+    Id: <input id="idForAjaxBrief" name="Id" />
+    <br />
+    <input id="checkboxAjax" type="checkbox" value="true" /> Brief
+    <br />
+    <button id="getSingleCustomerBriefly">Hämta</button>
+
+    <br />
+    <hr />
+    <h2>Get all customers with AJAX</h2>
+    <br />
+    <button id="getAllCustomers">Hämta</button>
+
+    <br />
+
+    <div id="successMessage"></div>
+    <div id="errorMessage"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="/js/ajaxlab.js"></script>
+</body>
+</html>

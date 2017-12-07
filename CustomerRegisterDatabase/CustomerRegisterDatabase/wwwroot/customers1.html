@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Customer Records with database</title>
+
+</head>
+<body>
+
+    <div id="addForm">
+        <label>First Name</label>
+        <br />
+        <input name="FirstName"/>
+        <br />
+        <label>Last Name</label>
+        <br />
+        <input name="LastName" />
+        <br />
+        <label>Email</label>
+        <br />
+        <input name="Email" />
+        <br />
+        <label>Gender:</label>
+        <br />
+        Male<input type="radio" value="Male" name="GenderType" />
+        Female<input type="radio" value="Female" name="GenderType" />
+        Other<input type="radio" value="Other" name="GenderType" />
+        <br />
+        <label>Age</label>
+        <br />
+        <input name="Age" />
+        <br />
+        <button>Ok</button>
+    </div>
+    <br />
+    <form id="editForm" data-id="">
+        <label>First Name</label>
+        <br />
+        <input name="FirstName" />
+        <br />
+        <label>Last Name</label>
+        <br />
+        <input name="LastName" />
+        <br />
+        <label>Email</label>
+        <br />
+        <input name="Email" />
+        <br />
+        <label>Gender:</label>
+        <br />
+        Male<input type="radio" value="Male" name="GenderType" />
+        Female<input type="radio" value="Female" name="GenderType" />
+        Other<input type="radio" value="Other" name="GenderType" />
+        <br />
+        <label>Age</label>
+        <br />
+        <input name="Age" />
+        <br />
+        <button>Ok</button>
+    </form>
+    <button id="listButton" type="submit">List all customers</button>
+    <div id="customerListDiv">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

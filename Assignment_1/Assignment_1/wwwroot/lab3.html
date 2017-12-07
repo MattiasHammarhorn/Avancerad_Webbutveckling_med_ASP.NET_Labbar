@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 3 - Web API</title>
+</head>
+<body>
+    <h1>Lab 3 - Web API</h1>
+    <form method="get" action="api/demo3api/LampSite">
+        <input type="checkbox" name="LampMode" value="true"/>
+        <br />
+        Slå på lampa
+        <br />
+        <button type="submit">Mörkt eller ljust</button>
+    </form>
+    <form method="get" action="api/demo3api/ShareChocolate">
+        <p>Antal personer</p>
+        <br />
+        <input type="text" name="NumberOfPersons" />
+        <br />
+        <button type="submit">Beräkna</button>
+    </form>
+    <form method="get" action="api/demo3api/GetOrderNumber">
+        <p>Ordernummer</p>
+        <br />
+        <input type="text" name="OrderRequest" />
+        <br />
+        <button type="submit">Slå upp order</button>
+    </form>
+    <form method="get" action="api/demo3api/FindUser">
+        <p>Användarnamn</p>
+        <input type="text" name="UserToFind" />
+        <button type="submit">Slå upp</button>
+    </form>
+</body>
+</html>

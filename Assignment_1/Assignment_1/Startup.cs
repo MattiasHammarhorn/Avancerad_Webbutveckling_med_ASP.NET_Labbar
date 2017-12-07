@@ -35,6 +35,8 @@ namespace Assignment_1
             }
 
             app.UseMvc();
+            app.UseStaticFiles();
+            app.UseDirectoryBrowser();
         }
     }
 }

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 4 - Web Api</title>
+</head>
+<body>
+    
+    <h2>Lab 4 - Web Api</h2>
+    <h2>Lägg till en person</h2>
+    <form method="post" action="/api/webapi4/CreatePerson">
+        Förnamn
+        <br />
+        <input name="Name" />
+        <br />
+        Ålder
+        <br />
+        <input name="Age" />
+        <br />
+        <button type="submit">Lägg till en person</button>
+    </form>
+    <br />
+    <hr />
+    <h2>Validera en person</h2>
+    <form method="post" action="/api/webapi4/ValidatePerson">
+        Förnamn
+        <br />
+        <input name="Name" />
+        <br />
+        Ålder
+        <br />
+        <input name="Age" />
+        <br />
+        <button type="submit">Lägg till en person</button>
+    </form>
+    <br />
+    <hr />
+    <h2>Validera en person med attribut</h2>
+    <form method="post" action="/api/webapi4/ValidateWithAttributes">
+        Förnamn
+        <br />
+        <input name="Name" />
+        <br />
+        Ålder
+        <br />
+        <input name="Age" />
+        <br />
+        <button type="submit">Lägg till en person</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\bin\Debug\netcoreapp2.0\CustomerRegisterTextfile.deps.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\bin\Debug\netcoreapp2.0\CustomerRegisterTextfile.runtimeconfig.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\bin\Debug\netcoreapp2.0\CustomerRegisterTextfile.runtimeconfig.dev.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\bin\Debug\netcoreapp2.0\CustomerRegisterTextfile.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\bin\Debug\netcoreapp2.0\CustomerRegisterTextfile.pdb
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\obj\Debug\netcoreapp2.0\CustomerRegisterTextfile.csproj.CoreCompileInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\obj\Debug\netcoreapp2.0\CustomerRegisterTextfile.AssemblyInfoInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\obj\Debug\netcoreapp2.0\CustomerRegisterTextfile.AssemblyInfo.cs
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\obj\Debug\netcoreapp2.0\CustomerRegisterTextfile.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\obj\Debug\netcoreapp2.0\CustomerRegisterTextfile.pdb
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterTextfile\CustomerRegisterTextfile\obj\Debug\netcoreapp2.0\CustomerRegisterTextfile.csprojResolveAssemblyReference.cache
