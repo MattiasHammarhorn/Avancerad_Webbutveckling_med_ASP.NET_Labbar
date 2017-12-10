@@ -1,4 +1,26 @@
-﻿function createTableOfObjectAndPropertiesArrays(properties, result) {
+﻿//Ajax functions for the seedButton that does not work
+//$("#seedButton").click(function () {
+
+//    $.ajax({
+//        url: 'api/Customers/Seed',
+//        method: 'GET'
+//    })
+//        .done(function (result) {
+
+//            console.log('Success! Result = ' + result);
+//            console.log(result);
+//            printSuccessMessage(result);
+//            $("#listCustomersButton").triggerHandler("click");
+//        })
+
+//        .fail(function (xhr, status, error) {
+
+//            printErrorMessage(error);
+//            console.log("Error", xhr, status, error);
+//        });
+//});
+
+function createTableOfObjectAndPropertiesArrays(properties, result) {
 
     $("#customerListDiv").text("");
     var html = '<table class="table"><thead><tr>';
@@ -102,27 +124,6 @@ $("#editFormSend").click(function () {
             console.log('Success! Result = ' + result);
             printSuccessMessage(result);
             $("#cancelButton").triggerHandler("click");
-            $("#listCustomersButton").triggerHandler("click");
-        })
-
-        .fail(function (xhr, status, error) {
-
-            printErrorMessage(error);
-            console.log("Error", xhr, status, error);
-        });
-});
-
-$("#seedButton").click(function () {
-    
-    $.ajax({
-        url: 'api/Customers/Seed',
-        method: 'DELETE'
-    })
-        .done(function (result) {
-            
-            console.log('Success! Result = ' + result);
-            console.log(result);
-            printSuccessMessage(result);
             $("#listCustomersButton").triggerHandler("click");
         })
 

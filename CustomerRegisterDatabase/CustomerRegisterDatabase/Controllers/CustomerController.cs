@@ -79,26 +79,27 @@ namespace CustomerRegisterDatabase.Controllers
             return Ok(customerList);
         }
 
-        [HttpPost, Route("Seed")]
-        public IActionResult Seed()
-        {
-            foreach(CustomerRegisterDatabase.Entities.Customer existingCustomerToBeDeleted in databaseContext.Customers)
-            {
-                databaseContext.Customers.Remove(existingCustomerToBeDeleted);
-            }
-            databaseContext.SaveChanges();
+        // Non-functional method
+        //[HttpGet, Route("Seed")]
+        //public IActionResult Seed()
+        //{
+        //    foreach(CustomerRegisterDatabase.Entities.Customer existingCustomerToBeDeleted in databaseContext.Customers)
+        //    {
+        //        databaseContext.Customers.Remove(existingCustomerToBeDeleted);
+        //    }
+        //    databaseContext.SaveChanges();
 
-            List<Customer> customersToSeed = databaseContext.SeedDatabaseWithCustomersFromTextfile();
+        //    List<Customer> customersToSeed = databaseContext.SeedDatabaseWithCustomersFromTextfile();
 
-            foreach(Customer customerToBeSeeded in customersToSeed)
-            {
-                customerToBeSeeded.CreatedOn = DateTime.Now;
-                customerToBeSeeded.LastUpdatedOn = DateTime.Now;
-                databaseContext.Customers.Add(customerToBeSeeded);
-                databaseContext.SaveChanges();
-            }
+        //    foreach(Customer customerToBeSeeded in customersToSeed)
+        //    {
+        //        customerToBeSeeded.CreatedOn = DateTime.Now;
+        //        customerToBeSeeded.LastUpdatedOn = DateTime.Now;
+        //        databaseContext.Customers.Add(customerToBeSeeded);
+        //        databaseContext.SaveChanges();
+        //    }
 
-            return Ok($"Database has successsfully been seeded.");
-        }
+        //    return Ok($"Database has successsfully been seeded.");
+        //}
     }
 }
