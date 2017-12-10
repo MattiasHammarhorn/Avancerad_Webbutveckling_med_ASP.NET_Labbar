@@ -9,3 +9,4 @@ C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRe
 C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Debug\netcoreapp2.0\CustomerRegisterDatabase.AssemblyInfo.cs
 C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Debug\netcoreapp2.0\CustomerRegisterDatabase.dll
 C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Debug\netcoreapp2.0\CustomerRegisterDatabase.pdb
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\bin\Debug\netcoreapp2.0\nlog.config

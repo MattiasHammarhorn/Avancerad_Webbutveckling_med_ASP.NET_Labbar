@@ -27,6 +27,8 @@ namespace CustomerRegisterDatabase.Migrations
 
                     b.Property<int>("Age");
 
+                    b.Property<DateTime>("CreatedOn");
+
                     b.Property<string>("Email");
 
                     b.Property<string>("FirstName");
@@ -34,6 +36,8 @@ namespace CustomerRegisterDatabase.Migrations
                     b.Property<int>("GenderType");
 
                     b.Property<string>("LastName");
+
+                    b.Property<DateTime>("LastUpdatedOn");
 
                     b.HasKey("Id");
 

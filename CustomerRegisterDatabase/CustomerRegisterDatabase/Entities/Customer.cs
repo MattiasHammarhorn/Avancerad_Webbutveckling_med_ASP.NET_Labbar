@@ -16,12 +16,14 @@ namespace CustomerRegisterDatabase.Entities
         public string Email { get; set; }
         public Gender GenderType { get; set; }
         public int Age { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public DateTime LastUpdatedOn { get; set; }
 
         public string GenderTypeEnglish
         {
             get
             {
-                switch(GenderType)
+                switch (GenderType)
                 {
                     case Gender.Male:
                         return "Male";
@@ -32,6 +34,22 @@ namespace CustomerRegisterDatabase.Entities
                 }
 
                 return GenderType.ToString();
+            }
+        }
+
+        public string FormatCreationDate
+        {
+            get
+            {
+                return CreatedOn.ToString();
+            }
+        }
+
+        public string FormatUpdateDate
+        {
+            get
+            {
+                return LastUpdatedOn.ToString();
             }
         }
     }

@@ -1,21 +1,24 @@
 ﻿function createTableOfObjectAndPropertiesArrays(properties, result) {
 
     $("#customerListDiv").text("");
-    var html = "<table><thead><tr>";
+    var html = '<table class="table"><thead><tr>';
 
     $.each(properties, function (key, property) {
-        html += '<td>' + property + '</td>'
+        html += '<th scope="col">' + property + '</td>';
     });
 
     html += '</tr>'+ '</thead>' + '<tbody>' + '<tr>';
 
     $.each(result, function (index, result) {
-        html += '<td>' + result.id + '</td>';
+        index++;
+        html += '<th scope="row">' + index + '</th>';
         html += '<td>' + result.firstName + '</td>';
         html += '<td>' + result.lastName + '</td>';
         html += '<td>' + result.email + '</td>';
         html += '<td>' + result.genderTypeEnglish + '</td>';
         html += '<td>' + result.age + '</td>';
+        html += '<td>' + result.formatCreationDate + '</td>';
+        html += '<td>' + result.formatUpdateDate + '</td>';
         html += '<td>' + '<button id="id_delete_for_' + result.id + '" class="delete_Button">Delete</button>' + '</td>';
         html += '<td>' + '<button id="id_edit_for_' + result.id + '" class="edit_Button">Edit</button>' + '</td>';
         html += '</tr>';
@@ -26,8 +29,31 @@
     $("#customerListDiv").append(html);
 }
 
+function printSuccessMessage(result) {
+    $("#successMessage").attr('class', 'alert alert-success').text(result).fadeOut(8000);
+}
 
-$("#addForm button").click(function () {
+function printErrorMessage(error) {
+    $("#errorMessage").attr('class', 'alert alert-danger').text(error).fadeOut(8000);
+}
+
+function resetEditForm() {
+    $("#editForm input").val("");
+}
+
+function resetAddForm() {
+    $("#addForm input").val("");
+}
+
+function hideEditForm() {
+    $("#editForm").hide();
+}
+
+function showEditForm() {
+    $("#editForm").show();
+}
+
+$("#addFormSend").click(function () {
 
     $.ajax({
         url: '/api/Customers',
@@ -43,19 +69,22 @@ $("#addForm button").click(function () {
     })
         .done(function (result) {
 
-            alert('Success! Result = ${result}');
-
+            console.log('Success! Result = ' + result);
+            printSuccessMessage(result);
+            $("#listCustomersButton").triggerHandler("click");
+            resetAddForm();
         })
 
         .fail(function (xhr, status, error) {
 
-            alert('Fail!');
+            printErrorMessage(error);
             console.log("Error", xhr, status, error);
 
         });
 });
 
-$("#editForm button").click(function () {
+$("#editFormSend").click(function () {
+
     $.ajax({
         url: '/api/Customers',
         method: 'PUT',
@@ -69,41 +98,70 @@ $("#editForm button").click(function () {
         }
     })
         .done(function (result) {
-
-            alert('Success! Result = ${result}');
-            console.log("Success!", result);
+            
+            console.log('Success! Result = ' + result);
+            printSuccessMessage(result);
+            $("#cancelButton").triggerHandler("click");
+            $("#listCustomersButton").triggerHandler("click");
         })
 
         .fail(function (xhr, status, error) {
+
+            printErrorMessage(error);
             console.log("Error", xhr, status, error);
-            alert('Fail!');
-
-
         });
 });
 
-$("#listButton").click(function () {
+$("#seedButton").click(function () {
+    
+    $.ajax({
+        url: 'api/Customers/Seed',
+        method: 'POST'
+    })
+        .done(function (result) {
+            
+            console.log('Success! Result = ' + result);
+            console.log(result);
+            printSuccessMessage(result);
+            $("#listCustomersButton").triggerHandler("click");
+        })
+
+        .fail(function (xhr, status, error) {
+
+            printErrorMessage(error);
+            console.log("Error", xhr, status, error);
+        });
+});
+
+$("#listCustomersButton").click(function () {
+
     $.ajax({
         url: '/api/Customers',
         method: 'GET'
 
     })
         .done(function (result) {
-            var properties = ["Id", "First Name", "Last Name", "Email", "Gender", "Age"];
+            var properties = ["#", "First Name", "Last Name", "Email", "Gender", "Age", "Created On", "Last Updated", "Delete", "Edit"];
             createTableOfObjectAndPropertiesArrays(properties, result);
-            
+            console.log("Success! Result = " + result);
         })
 
         .fail(function (xhr, status, error) {
 
-            alert('Fail!');
+            printErrorMessage(error);
             console.log("Error", xhr, status, error);
 
         });
 });
 
+$("#cancelButton").click(function () {
+
+    resetEditForm();
+    hideEditForm();
+});
 
 $(document).on("click", "button.delete_Button", function () {
+
     var idToSend = $(this).attr('id');
     var arrayToSplit = idToSend.split('_');
 
@@ -118,17 +176,20 @@ $(document).on("click", "button.delete_Button", function () {
         .done(function (result) {
 
             console.log("Success!", result);
+            printSuccessMessage(result);
+            $("#listCustomersButton").trigger("click");
         })
 
         .fail(function (xhr, status, error) {
 
-            alert('Fail!');
+            printErrorMessage(error);
             console.log("Error", xhr, status, error);
 
         });
 });
 
 $(document).on("click", "button.edit_Button", function () {
+
     var idToSend = $(this).attr('id');
     var arrayToSplit = idToSend.split('_');
 
@@ -150,14 +211,16 @@ $(document).on("click", "button.edit_Button", function () {
             $("#editForm input[name=GenderType]").filter('[value="' + result.genderType + '"]').attr('checked', true);
             $("#editForm input[name=Age]").val(result.age);
             $("#editForm").attr('data-id', arrayToSplit[3]);
-
+            showEditForm();
         })
 
         .fail(function (xhr, status, error) {
 
+            printErrorMessage(error);
             console.log("Error", xhr, status, error);
-            alert('Fail!');
-
         });
 });
 
+$(document).ready(function () {
+    hideEditForm();
+});

@@ -1,0 +1,12 @@
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\bin\Release\netcoreapp2.0\nlog.config
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\bin\Release\netcoreapp2.0\CustomerRegisterDatabase.deps.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\bin\Release\netcoreapp2.0\CustomerRegisterDatabase.runtimeconfig.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\bin\Release\netcoreapp2.0\CustomerRegisterDatabase.runtimeconfig.dev.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\bin\Release\netcoreapp2.0\CustomerRegisterDatabase.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\bin\Release\netcoreapp2.0\CustomerRegisterDatabase.pdb
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Release\netcoreapp2.0\CustomerRegisterDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Release\netcoreapp2.0\CustomerRegisterDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Release\netcoreapp2.0\CustomerRegisterDatabase.AssemblyInfoInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Release\netcoreapp2.0\CustomerRegisterDatabase.AssemblyInfo.cs
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Release\netcoreapp2.0\CustomerRegisterDatabase.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\CustomerRegisterDatabase\CustomerRegisterDatabase\obj\Release\netcoreapp2.0\CustomerRegisterDatabase.pdb

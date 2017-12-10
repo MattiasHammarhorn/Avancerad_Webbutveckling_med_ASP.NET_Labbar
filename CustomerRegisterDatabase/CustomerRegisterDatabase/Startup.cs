@@ -2,15 +2,19 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using CustomerRegisterDatabase.Entities;
+using NLog.Extensions.Logging;
+using NLog.Web;
 
 namespace CustomerRegisterDatabase
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IHostingEnvironment env, IConfiguration configuration)
         {
+            env.ConfigureNLog("nlog.config");
             Configuration = configuration;
         }
 
@@ -24,8 +28,9 @@ namespace CustomerRegisterDatabase
             services.AddMvc();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddNLog();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -34,6 +39,7 @@ namespace CustomerRegisterDatabase
             app.UseDirectoryBrowser();
             app.UseStatusCodePages();
             app.UseMvc();
+            app.AddNLogWeb();
 
         }
     }
