@@ -42,8 +42,6 @@ namespace CustomerRegisterDatabase.Controllers
             return Ok($"Customer with id: {customerToRemove.Id} has successsfully been removed to the records.");
         }
 
-        // /api/customers/?id=123
-        // /api/customers/123
         [HttpGet, Route("{id:int}")]
         public IActionResult GetCustomer(int id)
         {
@@ -80,26 +78,26 @@ namespace CustomerRegisterDatabase.Controllers
         }
 
         // Non-functional method
-        //[HttpGet, Route("Seed")]
-        //public IActionResult Seed()
-        //{
-        //    foreach(CustomerRegisterDatabase.Entities.Customer existingCustomerToBeDeleted in databaseContext.Customers)
-        //    {
-        //        databaseContext.Customers.Remove(existingCustomerToBeDeleted);
-        //    }
-        //    databaseContext.SaveChanges();
+        [HttpGet, Route("Seed")]
+        public IActionResult Seed()
+        {
+            foreach(CustomerRegisterDatabase.Entities.Customer existingCustomerToBeDeleted in databaseContext.Customers)
+            {
+                databaseContext.Customers.Remove(existingCustomerToBeDeleted);
+            }
+            databaseContext.SaveChanges();
 
-        //    List<Customer> customersToSeed = databaseContext.SeedDatabaseWithCustomersFromTextfile();
+            List<Customer> customersToSeed = databaseContext.SeedDatabaseWithCustomersFromTextfile();
 
-        //    foreach(Customer customerToBeSeeded in customersToSeed)
-        //    {
-        //        customerToBeSeeded.CreatedOn = DateTime.Now;
-        //        customerToBeSeeded.LastUpdatedOn = DateTime.Now;
-        //        databaseContext.Customers.Add(customerToBeSeeded);
-        //        databaseContext.SaveChanges();
-        //    }
+            foreach(Customer customerToBeSeeded in customersToSeed)
+            {
+                customerToBeSeeded.CreatedOn = DateTime.Now;
+                customerToBeSeeded.LastUpdatedOn = DateTime.Now;
+                databaseContext.Customers.Add(customerToBeSeeded);
+            }
+            databaseContext.SaveChanges();
 
-        //    return Ok($"Database has successsfully been seeded.");
-        //}
+            return Ok($"Database has successsfully been seeded.");
+        }
     }
 }

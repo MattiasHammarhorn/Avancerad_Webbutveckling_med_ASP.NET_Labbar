@@ -1,0 +1,11 @@
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\bin\Debug\netcoreapp2.0\NewsSite.deps.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\bin\Debug\netcoreapp2.0\NewsSite.runtimeconfig.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\bin\Debug\netcoreapp2.0\NewsSite.runtimeconfig.dev.json
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\bin\Debug\netcoreapp2.0\NewsSite.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\bin\Debug\netcoreapp2.0\NewsSite.pdb
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\obj\Debug\netcoreapp2.0\NewsSite.csprojResolveAssemblyReference.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\obj\Debug\netcoreapp2.0\NewsSite.csproj.CoreCompileInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\obj\Debug\netcoreapp2.0\NewsSite.AssemblyInfoInputs.cache
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\obj\Debug\netcoreapp2.0\NewsSite.AssemblyInfo.cs
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\obj\Debug\netcoreapp2.0\NewsSite.dll
+C:\Users\Roger och Stina\Desktop\Avancerad Webbutveckling med ASP.NET\NewsSite\obj\Debug\netcoreapp2.0\NewsSite.pdb

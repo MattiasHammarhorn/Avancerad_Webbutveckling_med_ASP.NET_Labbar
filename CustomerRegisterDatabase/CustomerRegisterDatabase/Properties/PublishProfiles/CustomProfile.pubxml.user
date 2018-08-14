@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="DefaultConnection">
-      <Value>Data Source=SQL6002.site4now.net;Initial Catalog=DB_A2FD2D_customerregister;User Id=DB_A2FD2D_customerregister_admin;Password=advancedasp1;</Value>
+      <Value>Data Source=SQL6002.site4now.net;Initial Catalog=DB_A2FD2D_customerregister;User Id=DB_A2FD2D_customerregister_admin;Password=dbproject1;</Value>
     </DestinationConnectionStrings>
   </ItemGroup>
 </Project>

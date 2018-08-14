@@ -14,14 +14,46 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
+    <Folder Include="wwwroot\secrethtml\subsecret2\" />
+    <Folder Include="wwwroot\secrethtml\subsecret1\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.Production.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Update="nlog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DataFilesLocal Include="DataFilesLocal/**/*" />
+    <DotnetPublishFiles Include="@(_DataFilesLocal)">
+      <DestinationRelativePath>DataFiles/%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+    </DotnetPublishFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DjurFiles Include="$(MSBuildProjectDirectory)/../Djur/**/*" />
+    <Content Include="secret123.html" />
+    <DotnetPublishFiles Include="@(_DjurFiles)">
+      <DestinationRelativePath>Animals/%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+    </DotnetPublishFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot/notforpublish.html" CopyToPublishDirectory="Never" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot/secrethtml/**/*" CopyToPublishDirectory="Never" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="secret*.html" CopyToPublishDirectory="Never" />
   </ItemGroup>
   
 </Project>

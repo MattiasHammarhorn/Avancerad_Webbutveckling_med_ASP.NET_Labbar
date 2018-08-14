@@ -1,24 +1,24 @@
 ﻿//Ajax functions for the seedButton that does not work
-//$("#seedButton").click(function () {
+$("#seedButton").click(function () {
 
-//    $.ajax({
-//        url: 'api/Customers/Seed',
-//        method: 'GET'
-//    })
-//        .done(function (result) {
+    $.ajax({
+        url: 'api/Customers/Seed',
+        method: 'GET'
+    })
+        .done(function (result) {
 
-//            console.log('Success! Result = ' + result);
-//            console.log(result);
-//            printSuccessMessage(result);
-//            $("#listCustomersButton").triggerHandler("click");
-//        })
+            console.log('Success! Result = ' + result);
+            console.log(result);
+            printSuccessMessage(result);
+            $("#listCustomersButton").triggerHandler("click");
+        })
 
-//        .fail(function (xhr, status, error) {
+        .fail(function (xhr, status, error) {
 
-//            printErrorMessage(error);
-//            console.log("Error", xhr, status, error);
-//        });
-//});
+            printErrorMessage(error);
+            console.log("Error", xhr, status, error);
+        });
+});
 
 function createTableOfObjectAndPropertiesArrays(properties, result) {
 
@@ -224,4 +224,17 @@ $(document).on("click", "button.edit_Button", function () {
 
 $(document).ready(function () {
     hideEditForm();
+
+    $.ajax({
+        url: 'api/demo',
+        method: 'GET'
+    })
+        .done(function (result) {
+            console.log(result);
+            $("#configResult").html(result.mail + '</br >' + 'sendMail: ' + result.sendMail + '</br >' +  'logEverySentMail: ' + result.logEverySentMail + '</br >' + result.blindCopyAddresses[0] + ' ' + result.blindCopyAddresses[1]);
+        })
+        .fail(function (xhr, error, status) {
+            console.log(xhr, error, status);
+            printErrorMessage(error);
+        })
 });
